@@ -1,5 +1,5 @@
 {
-  "name": "nexttube",
+  "name": "oxygen",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,9 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.2",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
+    "vue-scrollto": "^2.17.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

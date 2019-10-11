@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Bootstrap Overrides
+
+.jumbotron *:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.card-footer {
+    border: none;
+    background: transparent;
+}
+
+.navbar {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dark-bg {
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 8, 24, 0.5);
+    }
+    &.fullscreen::before {
+        height: 100vh;
+    }
+}
+
+.home {
+    &:not(.video) {
+        background-image: url('https://picsum.photos/2000/1000/?image=15');
+    }
+    video {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.pricing-cards .card {
+    h1 {
+        font-size: 6rem;
+        span {
+            font-size: 2rem;
+        }
+    }
+    .icon {
+       font-size: 50px;
+    }
+}
+
+.testimonials {
+    li {
+        a[role="tab"]{
+            width: 15px;
+            height: 15px;
+            padding: 0;
+            border-radius: 100%;
+            background: #D1D1D1;
+            transition: all 0.2s ease-in-out;
+            &.active {
+                background-color: white;
+                border: 2px solid #0785F3;
+            }
+        }
+        &:not(:only-child) a[role="tab"] {
+            margin-right: 7.5px;
+            margin-left: 7.5px;
+        }
+    }
+    .testimonial-logo {
+        width: 175px;
+    }
+    .testimonial-thumb {
+        width: 80px;
+    }
+}
+
+.buy-it {
+    background-image: url('https://picsum.photos/2000/1000/?image=13');
+}
+
+footer {
+    background-color: #222222;
+}
+
+.slide-entrance {
+    animation: fadeSlide 1s ease;
+}
+
+@keyframes fadeSlide{
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recent-posts-cards.card-deck .card,
+    .best-features-cards.card-deck .card,
+    .pricing-cards.card-group .card {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+    .pricing-cards.card-group .card:not(:first-child) {
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .recent-posts-cards.card-deck .card,
+    .pricing-cards.card-group .card {
+        flex: 1 0 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0;
+    }
+    .pricing-cards.card-group .card:nth-child(3) {
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .best-features-cards.card-deck .card {
+        flex: 1 0 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0;
+        .card-text {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1460px;
+    }
+}
