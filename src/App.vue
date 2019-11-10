@@ -60,7 +60,7 @@ export default {
 
     let checkOffSet = () => {
       if (window.innerWidth >= 991) {
-        if (window.pageYOffset > window.innerHeight - 300) {
+        if (window.pageYOffset > window.innerHeight - 700) {
           navbar.classList.add("bg-dark")
         } else {
           navbar.classList.remove("bg-dark")
