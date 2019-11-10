@@ -31,13 +31,16 @@
       </b-container>
     </b-navbar>
     <router-view />
-    <footer class="p-3 text-light">
-      <b-container class="d-flex align-items-center justify-content-center">
-        <i class="icon ion-md-planet text-primary h2 m-0" />
-        <h6 class="mb-0 ml-4 text-muted">
-          Copyright 2019
-          <a class="text-light font-weight-bold" href="#">Company Name</a>.
-        </h6>
+    <footer class="p-4 text-light">
+      <b-container class="d-flex align-items-center">
+        <div class="d-flex flex-fill align-items-center">
+          <i class="icon ion-md-planet text-primary h2 m-0" />
+          <h6 class="mb-0 ml-4 text-muted">
+            Copyright 2019
+            <a class="font-weight-bold text-muted" href="#">Company Name</a>.
+            All rights reserved.
+          </h6>
+        </div>
       </b-container>
     </footer>
   </div>
