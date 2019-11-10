@@ -5,21 +5,14 @@ Responsive landing page built with VueJS and bootstrap-vue, give it a ⭐️ if 
 ![Alt text](https://raw.githubusercontent.com/hunter-isaiah96/oxy.gen/master/src/assets/oxygen.png)
 
 ## Installation
-1. Clone repository
-```shell
-git clone https://github.com/hunter-isaiah96/oxy.gen.git
-```
-2. Navigate to Folder
-```shell
-cd oxy.gen
-```
-3. Install dependencies
-```shell
-npm install
-```
-## Quick start
-Run development server
-```shell
-npm run serve
-```
 
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run serve
+
+# build for production
+npm run build
+```
