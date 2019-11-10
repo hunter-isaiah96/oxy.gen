@@ -2,6 +2,8 @@
 
 Responsive landing page built with VueJS and bootstrap-vue, give it a ⭐️ if you like it!
 
+[View Demo](https://oxy-gen.netlify.com/)
+
 ![Alt text](https://raw.githubusercontent.com/hunter-isaiah96/oxy.gen/master/src/assets/oxygen.png)
 
 ## Installation
